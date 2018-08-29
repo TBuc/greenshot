@@ -1565,7 +1565,7 @@ namespace Greenshot.Addon.LegacyEditor.Forms
                 {
                     buttons = MessageBoxButtons.YesNo;
                 }
-                var result = MessageBox.Show(_editorLanguage.EditorCloseOnSave, _editorLanguage.EditorCloseOnSaveTitle, buttons, MessageBoxIcon.Question);
+                var result = MessageBox.Show(_editorLanguage.EditorCloseOnSave, _editorLanguage.EditorCloseOnSaveTitle, buttons, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
                 if (result.Equals(DialogResult.Cancel))
                 {
                     e.Cancel = true;
